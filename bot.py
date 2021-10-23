@@ -124,9 +124,9 @@ def keyboard_callback_handler(update: Update, context: CallbackContext):
     keyboard_1_text = "\n\nВыберите тему:"
     keyboard_2_text = "\n\nВыберите один из вариантов:"
 
-# При нажатии на кнопку telegram отправляет ответ в виде callback_data.
-# В зависимости от значения callback_data подбирается нужная теория из словаря "theory_dict",
-# отправляется ответным сообщением пользователю, прикрепляется нужная клавиатура.
+    # При нажатии на кнопку telegram отправляет ответ в виде callback_data.
+    # В зависимости от значения callback_data подбирается нужная теория из словаря "theory_dict",
+    # отправляется ответным сообщением пользователю, прикрепляется нужная клавиатура.
     if data == CALLBACK_BUTTON1_YES:
         query.edit_message_text(
             text=theory_dict["HISTORY"] + keyboard_1_text,
